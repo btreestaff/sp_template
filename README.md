@@ -7,4 +7,7 @@ When you are done working on your project, click on the github icon on the left 
 Add a message summarizing the changes you made and click on the small arrow next to commit.
 Select "Commit & Sync" to save all of your changes.
 
-Developers:
+## First Task
+
+1. Go to the public folder and open the index.html file.
+2. Update the title of the website from "React App" to the name of your project.
