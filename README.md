@@ -2,7 +2,7 @@
 
 When you begin working on your project run these git commands in the terminal one by one
 - npm i
-- git fetch
+- git pull
 - npm start
 
 ## First Task
