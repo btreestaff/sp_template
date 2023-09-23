@@ -1,7 +1,6 @@
 ## Setting up
 
 When you begin working on your project run these git commands in the terminal one by one
-- npm i
 - git pull
 - npm run dev
 
