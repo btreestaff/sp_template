@@ -2,9 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layout/layout";
-import { ROUTES } from "./data/routes";
-
-// --------------------------
+import { ROUTES } from "./data/conf";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -13,8 +11,8 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: ROUTES
-  }
+    children: ROUTES,
+  },
 ]);
 
 root.render(

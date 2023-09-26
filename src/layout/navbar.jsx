@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ROUTES } from "../data/routes";
+import { ROUTES, TITLE } from "../data/conf";
 
 export default function Navbar() {
   return (
@@ -35,12 +35,12 @@ export default function Navbar() {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost normal-case text-xl">
-            TITLE
+            {TITLE}
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            {ROUTES.map((r) => (
+            {ROUTES.filter((route) => route.title).map((r) => (
               <li key={r.title}>
                 <Link to={r.path}>{r.title}</Link>
               </li>
@@ -61,12 +61,6 @@ export default function Navbar() {
               tabIndex={0}
               className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
             >
-              <li>
-                <Link>Profile</Link>
-              </li>
-              <li>
-                <Link>Settings</Link>
-              </li>
               <li>
                 <button>Logout</button>
               </li>
